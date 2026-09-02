@@ -151,7 +151,7 @@ jobs:
       ]
     timeout-minutes: 10
     steps:
-      - uses: runs-on/action@4e5f72399b6b17f2e79c511c1b38a315a64d22dc
+      - uses: runs-on/action@46910bf61b41721b0579f237e186afb35477007a
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v6
         with:
@@ -182,7 +182,7 @@ jobs:
       ]
     timeout-minutes: 10
     steps:
-      - uses: runs-on/action@4e5f72399b6b17f2e79c511c1b38a315a64d22dc
+      - uses: runs-on/action@46910bf61b41721b0579f237e186afb35477007a
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v6
         with:
@@ -258,7 +258,7 @@ jobs:
         edition: ${{ fromJson(needs.discover-test-dirs.outputs.editions) }}
 
     steps:
-      - uses: runs-on/action@4e5f72399b6b17f2e79c511c1b38a315a64d22dc
+      - uses: runs-on/action@46910bf61b41721b0579f237e186afb35477007a
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v6
         with:
@@ -474,7 +474,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: runs-on/action@4e5f72399b6b17f2e79c511c1b38a315a64d22dc
+      - uses: runs-on/action@46910bf61b41721b0579f237e186afb35477007a
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v6
         with:
@@ -581,7 +581,7 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - uses: runs-on/action@4e5f72399b6b17f2e79c511c1b38a315a64d22dc
+      - uses: runs-on/action@46910bf61b41721b0579f237e186afb35477007a
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # ratchet:actions/checkout@v6
         with:
