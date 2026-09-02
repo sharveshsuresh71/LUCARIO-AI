@@ -1,0 +1,4 @@
+# lucario-cnpg-crds ships only the CloudNativePG CRDs (crds/cnpg-crds.yaml) and has
+# no configurable values. The parent lucario chart gates it via the
+# postgresql.installCRDs / postgresql.enabled condition in its Chart.yaml.
+# This file exists because chart-testing (ct lint) requires a values.yaml.

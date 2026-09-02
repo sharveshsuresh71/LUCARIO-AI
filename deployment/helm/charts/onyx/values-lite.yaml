@@ -1,0 +1,28 @@
+# =============================================================================
+# LUCARIO LITE — MINIMAL DEPLOYMENT VALUES
+# =============================================================================
+# Minimal LUCARIO deployment: no vector database, no Redis, no model servers.
+# Only PostgreSQL is required. Connectors and RAG search are disabled, but the
+# core chat experience (LLM conversations, tools, user file uploads, Projects,
+# Agent knowledge) still works.
+#
+# Usage:
+#   helm install lucario ./deployment/helm/charts/lucario \
+#     -f ./deployment/helm/charts/lucario/values-lite.yaml
+#
+# Or merged with your own overrides:
+#   helm install lucario ./deployment/helm/charts/lucario \
+#     -f ./deployment/helm/charts/lucario/values-lite.yaml \
+#     -f my-overrides.yaml
+# =============================================================================
+
+vectorDB:
+  enabled: false
+
+redis:
+  enabled: false
+
+configMap:
+  CACHE_BACKEND: "postgres"
+  AUTH_BACKEND: "postgres"
+  FILE_STORE_BACKEND: "postgres"

@@ -1,0 +1,94 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:actions"
+  - package-ecosystem: "uv"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:python"
+    ignore:
+      - dependency-name: "types-*"
+  - package-ecosystem: "bun"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:javascript"
+  - package-ecosystem: "bun"
+    directory: "/web"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:javascript"
+  - package-ecosystem: "bun"
+    directory: "/backend/lucario/server/features/build/sandbox/image/templates/outputs/web"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "wenxi-lucario"
+    labels:
+      - "dependabot:javascript"
+      - "dependabot:sandbox"
+  - package-ecosystem: "docker"
+    directory: "/backend/lucario/server/features/build/sandbox/image"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 3
+    assignees:
+      - "wenxi-lucario"
+    labels:
+      - "dependabot:docker"
+      - "dependabot:sandbox"
+  - package-ecosystem: "docker"
+    directory: "/web"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 1
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:docker"
+  - package-ecosystem: "docker"
+    directory: "/backend"
+    schedule:
+      interval: "weekly"
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 1
+    assignees:
+      - "jmelahman"
+    labels:
+      - "dependabot:docker"
